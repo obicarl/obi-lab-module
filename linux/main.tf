@@ -2,6 +2,9 @@
 # Configuration and Deployment of AWS Instance for Linux
 #
 ####
+provider "aws" {
+  region = "us-west-2"
+}
 
 resource "aws_network_interface" "linux" {
   subnet_id       = "${var.subnet_id}"
