@@ -4,7 +4,6 @@
 
 # AWS specific variables
 // variable "region" {
-//   type = "map"
 //   description = "AWS Region to which the servers should be provisioned"
 // }
 
