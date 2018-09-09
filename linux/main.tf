@@ -2,6 +2,10 @@
 # Configuration and Deployment of AWS Instance for Linux
 #
 ####
+provider "aws" {
+  region = "${var.region}"
+}
+
 resource "aws_network_interface" "linux" {
   subnet_id       = "${var.subnet_id}"
   security_groups = ["${var.security_groups}"]

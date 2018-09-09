@@ -11,7 +11,6 @@ module "rhel_73" {
   key_file_path   = "${var.key_file_path}"
   subnet_id       = "${var.subnet_id}"
   security_groups = ["${split(",",var.security_groups)}"]
-  region = "${var.region}"
 
   # EBS volume info
   disk_sizes = "${var.disk_sizes}"
